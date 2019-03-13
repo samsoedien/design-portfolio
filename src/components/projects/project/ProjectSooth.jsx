@@ -51,7 +51,7 @@ const ProjectSooth = ({ classes }) => (
             </Grid>
 
           </Grid>
-          <video src={Video} className={classes.projectVideo} autoplay="autoplay" loop="loop" muted="muted"></video>
+          <video src={Video} className={classes.projectVideo} autoPlay="autoplay" loop="loop" muted="muted"></video>
         </Grid>
       </Grid>
     </Fade>

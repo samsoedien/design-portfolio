@@ -8,50 +8,51 @@ import {
   CardMedia,
   CardActionArea,
 } from '@material-ui/core';
+import './ProjectPanel.css';
 
 const styles = theme => ({
-  projectPanel: {
-    position: 'relative',
-    height: '200px',
-    width: '200px', 
-    '&:hover projectPanelContent': {
-      transform: 'scale(1)',
-      opacity: 1,
-      transition: '.5s',
-    },
-    '&:hover projectPanelImage': {
-      transform: 'scale(1.2)',
-      //   -webkit-filter: blur(4px)',
-      //   -moz-filter: blur(4px)',
-      //   -o-filter: blur(4px)',
-      //   -ms-filter: blur(4px)',
-      filter: 'blur(4px)',
-      transition: '.4s',
-    }
-  },
-  projectPanelImage: {
-    width: '100%',
-    height: '100%',
-    transition: '.5s',
-  },
-  projectPanelContent: {
-    position: 'absolute',
-    paddingTop: '120px',
-    backgroundColor: 'rgba(255, 255, 255, 0.7)',
-    color: '#009688',
-    fontFamily: '"Lato", sans-serif',
-    fontWeight: 600,  
-    fontSize: '1em',
-    textAlign: 'center',
-    textTransform: 'uppercase',
-    top: 0,
-    left: 0,
-    width: '100%',
-    height: '100%',
-    opacity: 0,
-    transform: 'scale(1.2)',
-    transition: '.5s',
-  },  
+  // projectPanel: {
+  //   position: 'relative',
+  //   height: '200px',
+  //   width: '200px', 
+  //   '&:hover projectPanelContent': {
+  //     transform: 'scale(1)',
+  //     opacity: 1,
+  //     transition: '.5s',
+  //   },
+  //   '&:hover projectPanelImage': {
+  //     transform: 'scale(1.2)',
+  //     //   -webkit-filter: blur(4px)',
+  //     //   -moz-filter: blur(4px)',
+  //     //   -o-filter: blur(4px)',
+  //     //   -ms-filter: blur(4px)',
+  //     filter: 'blur(4px)',
+  //     transition: '.4s',
+  //   }
+  // },
+  // projectPanelImage: {
+  //   width: '100%',
+  //   height: '100%',
+  //   transition: '.5s',
+  // },
+  // projectPanelContent: {
+  //   position: 'absolute',
+  //   paddingTop: '120px',
+  //   backgroundColor: 'rgba(255, 255, 255, 0.7)',
+  //   color: '#009688',
+  //   fontFamily: '"Lato", sans-serif',
+  //   fontWeight: 600,  
+  //   fontSize: '1em',
+  //   textAlign: 'center',
+  //   textTransform: 'uppercase',
+  //   top: 0,
+  //   left: 0,
+  //   width: '100%',
+  //   height: '100%',
+  //   opacity: 0,
+  //   transform: 'scale(1.2)',
+  //   transition: '.5s',
+  // },  
   // .project-panel:hover .project-panel__content {
   //   transform: scale(1)',
   //   opacity: 1',
@@ -84,13 +85,13 @@ const ProjectPanel = ({
   return (
     <Grid item>
       <CardActionArea onClick={onClick}>
-        <Card raised className={classes.projectPanel}>
+        <Card raised className="project-panel">
           <CardMedia
-            className={classes.projectPanelImage}
+            className="project-panel__image"
             image={image}
             title="Project"
           />
-          <p className={classes.projectPanelContent}>{caption}</p>
+          <p className="project-panel__content">{caption}</p>
         </Card>
       </CardActionArea>
     </Grid>
@@ -101,8 +102,7 @@ ProjectPanel.propTypes = {
   name: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
   caption: PropTypes.string.isRequired,
-  onHandleClick: PropTypes.string.isRequired,
-  children: PropTypes.object.isRequired, // eslint-disable-line
+  onHandleClick: PropTypes.func.isRequired,
   classes: PropTypes.object.isRequired, // eslint-disable-line
 };
 

@@ -7,9 +7,9 @@ import { Zoom } from 'react-reveal';
 
 import ProjectPanel from './ProjectPanel';
 
-import BannerImage from '../../assets/img/project-navi.JPG';
+// import BannerImage from '../../assets/img/project-navi.JPG';
 
-import ImageBanner from '../layout/ImageBanner';
+// import ImageBanner from '../layout/ImageBanner';
 import Project1 from '../../assets/img/tumbnails/project-pasthrees.jpg';
 import Project2 from '../../assets/img/tumbnails/project-actushape.png';
 import Project3 from '../../assets/img/tumbnails/project-vitality.jpg';
@@ -19,7 +19,7 @@ import Project6 from '../../assets/img/tumbnails/project-orbi.JPG';
 import Project7 from '../../assets/img/tumbnails/project-rollz.jpg';
 import Project8 from '../../assets/img/tumbnails/project-aqualux.jpg';
 import Project9 from '../../assets/img/tumbnails/project-sooth.jpg';
-import Project10 from '../../assets/img/tumbnails/project-robocleaner.jpg';
+// import Project10 from '../../assets/img/tumbnails/project-robocleaner.jpg';
 
 const styles = theme => ({
   root: {

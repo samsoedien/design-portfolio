@@ -7,13 +7,11 @@ const styles = theme => ({
 
 });
 
-const FormConfirmation = ({ classes }) => {
-  return (
-    <div className={classes.root}>
-      <h1>Success</h1>
-    </div>
-  )
-}
+const FormConfirmation = ({ classes }) => (
+  <div className={classes.root}>
+    <h1>Success</h1>
+  </div>
+);
 
 FormConfirmation.propTypes = {
   classes: PropTypes.object.isRequired, // eslint-disable-line

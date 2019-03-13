@@ -56,7 +56,7 @@ const ProjectSailance = ({ classes }) => (
             </Grid>
 
           </Grid>
-          {/* <video src={Video} className="project__video" autoplay="autoplay" loop="loop" muted="muted"></video> */}
+          {/* <video src={Video} className="project__video" autoPlay="autoplay" loop="loop" muted="muted"></video> */}
         </Grid>
       </Grid>
       <Divider className="divider" />

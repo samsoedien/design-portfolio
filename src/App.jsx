@@ -7,12 +7,13 @@ import theme from './theme/theme';
 // import logo from './logo.svg';
 import './App.css';
 
+// import Routes from './Routes';
 import ScrollToTop from './wrappers/ScrollToTop';
 import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
 import About from './components/about/About';
 import Projects from './components/projects/Projects';
-import Photography from './components/photography/Photography';
+// import Photography from './components/photography/Photography';
 import ContactContainer from './containers/ContactContainer';
 
 const App = () => (
@@ -25,7 +26,7 @@ const App = () => (
             <main className="app-main">
               <About />
               <Projects />
-              <Photography />
+              {/* <Photography /> */}
               <ContactContainer />
             </main>
             <Footer />

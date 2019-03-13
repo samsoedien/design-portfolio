@@ -21,6 +21,17 @@ import Project8 from '../../assets/img/tumbnails/project-aqualux.jpg';
 import Project9 from '../../assets/img/tumbnails/project-sooth.jpg';
 import Project10 from '../../assets/img/tumbnails/project-robocleaner.jpg';
 
+// import ProjectPasthrees from './project/ProjectPasthrees';
+// import ProjectActushape from './project/ProjectActushape';
+// import ProjectVitality from './project/ProjectVitality';
+// import ProjectMementory from './project/ProjectMementory';
+// import ProjectSailance from './project/ProjectSailance';
+// import ProjectOrbi from './project/ProjectOrbi';
+// import ProjectAssist from './project/ProjectAssist';
+// import ProjectAqualux from './project/ProjectAqualux';
+// import ProjectSooth from './project/ProjectSooth';
+// import ProjectRobocleaner from './project/ProjectRobocleaner';
+
 const ProjectPasthrees = lazy(() => import('./project/ProjectPasthrees'));
 const ProjectActushape = lazy(() => import('./project/ProjectActushape'));
 const ProjectVitality = lazy(() => import('./project/ProjectVitality'));

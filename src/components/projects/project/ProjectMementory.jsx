@@ -51,7 +51,7 @@ const ProjectMementory = ({ classes }) => (
             </Grid>
 
           </Grid>
-          <video src={Video} className={classes.projectVideo} autoplay="autoplay" loop="loop" muted="muted"></video>
+          <video src={Video} className={classes.projectVideo} autoPlay="autoplay" loop="loop" muted="muted"></video>
         </Grid>
       </Grid>
       <Divider className="divider" />
@@ -60,7 +60,6 @@ const ProjectMementory = ({ classes }) => (
 );
 
 ProjectMementory.propTypes = {
-  children: PropTypes.object.isRequired, // eslint-disable-line
   classes: PropTypes.object.isRequired, // eslint-disable-line
 };
 

@@ -3,8 +3,6 @@ import PropTypes from 'prop-types';
 // import { Link } from 'react-router-dom';
 import { withStyles } from '@material-ui/core/styles';
 
-// import ScrollWrapper from '../../wrappers/ScrollWrapper';
-
 const styles = theme => ({
   imageBanner: {
     position: 'relative',
@@ -19,7 +17,7 @@ const styles = theme => ({
     backgroundSize: 'cover',
     backgroundPosition: 'center right',
     backgroundRepeat: 'no-repeat',
-    // backgroundAttachment: 'fixed',
+    backgroundAttachment: 'scroll',
   },
   '@media screen and (min-width: 960px)': {
     imageBanner: {
@@ -34,23 +32,15 @@ const styles = theme => ({
 });
 
 const AboutImageBanner = ({ bannerImage, children, classes }) => {
-  // const handleScroll = scrollDistance => {
-  //   const parallaxItem = document.getElementById('myDiv');
-  //   parallaxItem.style.transform = `translate(0px, ${scrollDistance / 1.0}px)`;
-  // };
-
   return (
-    // <ScrollWrapper onWindowScroll={handleScroll}>
-    <div className={classes.imageBanner} >
+    <div className={classes.imageBanner}>
       <div
-        id="myDiv"
         className={classes.imageBannerBackground}
         style={{ backgroundImage: `url(${bannerImage})` }}
       >
         {children}
       </div>
     </div>
-    // </ScrollWrapper>
   );
 };
 

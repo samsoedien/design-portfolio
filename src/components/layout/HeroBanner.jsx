@@ -73,9 +73,9 @@ class HeroBanner extends Component {
   render() {
     const { classes } = this.props;
     return (
-      <div className={classes.heroBanner}>
+      <div className={classes.heroBanner} id="home">
         <div className={classes.heroBannerImage} style={{ backgroundImage: `url(${Background})` }}>
-          <video src={Video} autoplay="autoplay" loop="loop" muted="muted" className={classes.heroBannerVideo}></video>
+          <video src={Video} autoPlay="autoplay" loop="loop" muted="muted" className={classes.heroBannerVideo}></video>
           <div className={classes.heroBannerOverlay}>
             <SVGOverlay />
           </div>

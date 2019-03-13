@@ -39,7 +39,7 @@ const Footer = ({ classes }) => {
       </Grid>
       <Grid container justify="center">
         <Grid item xs={11} md={8}>
-          <Typography variant="caption">Thank you for visiting my page. The website is currently on continuous development, contact me through the contact form of one of the social media icons above.</Typography>
+          <Typography variant="caption">Thank you for visiting my page. The website is currently on continuous development, contact me through the contact form or via one of the social media icons above.</Typography>
         </Grid>
       </Grid>
     </footer>

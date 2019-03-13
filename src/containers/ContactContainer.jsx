@@ -45,8 +45,8 @@ class ContactContainer extends Component {
       message,
     };
 
-    const { emailContact } = this.props;
-    emailContact(formData);
+    const { emailContact, history } = this.props;
+    emailContact(formData, history);
   }
 
   render() {

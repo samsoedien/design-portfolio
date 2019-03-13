@@ -11,7 +11,8 @@ import { Fade } from 'react-reveal';
 
 import LinkedInComponent from './LinkedInComponent';
 import ImageBanner from '../layout/ImageBanner';
-import ContactImage from '../../assets/img/Profile_Banner.JPG';
+// import ContactImage from '../../assets/img/Profile_Banner.JPG';
+import ContactImage from '../../assets/img/DSC_7530.JPG';
 
 const styles = theme => ({
   contactForm: {
@@ -60,7 +61,6 @@ const Contact = ({
             <article className="about__article">
               <Typography variant="h3">Contact</Typography>
               <div className="horizontal-line" />
-              <Typography variant="body1" paragraph>Fill the form below to contact me.</Typography>
             </article>
           </Fade>
         </Grid>
@@ -69,7 +69,7 @@ const Contact = ({
       <Grid container justify="center">
         <Grid item xs={11} sm={8} md={6} lg={4}>
           <form onSubmit={onSubmit} className={classes.contactForm} noValidate autoComplete="off">
-            <Typography variant="body1" paragraph>Contact me.</Typography>
+            <Typography variant="body1" paragraph>Contact me by filling the form below. You will receive a confirmation mail with your message and I will get back at you at my earliest convenience.</Typography>
             <TextField
               className={classes.contactFormInput}
               variant="outlined"
@@ -119,7 +119,11 @@ const Contact = ({
           </form>
         </Grid>
       </Grid>
-      {/* <LinkedInComponent /> */}
+      <Grid container justify="center">
+        <Grid item>
+          <LinkedInComponent />
+        </Grid>
+      </Grid>
     </section>
   );
 };
