@@ -5,7 +5,8 @@ import { withStyles } from '@material-ui/core/styles';
 
 import SVGOverlay from './SVGOverlay';
 import Background from '../../assets/img/pexels-photo-303014.jpg';
-import Video from '../../assets/videos/Exploration_Affordances_Control_interface_V1.1.mp4';
+import WEBM_VIDEO from '../../assets/videos/Exploration_Affordances_Control_interface_V1.1.webm';
+import MP4_VIDEO from '../../assets/videos/Exploration_Affordances_Control_interface_V1.1.mp4';
 
 const styles = theme => ({
   heroBanner: {
@@ -17,13 +18,13 @@ const styles = theme => ({
     width: 'auto',
     height: '100vh',
     zIndex: 100,
-    overflow: 'hidden', 
+    overflow: 'hidden',
   },
   heroBannerImage: {
-    position: 'absolute', 
+    position: 'absolute',
     top: 0,
     left: 0,
-    minWidth: '100%',    
+    minWidth: '100%',
     minHeight: '100%',
     width: 'auto',
     height: '100vh',
@@ -49,9 +50,9 @@ const styles = theme => ({
     transform: 'translate(-50%, -50%)',
     textAlign: 'center',
     fontFamily: '"Mr Dafoe", cursive',
-    fontSize: '2.5rem', 
+    fontSize: '2.5rem',
     fontWeight: 400,
-    color: 'white', 
+    color: 'white',
   },
   heroBannerVideo: {
     position: 'absolute',
@@ -75,7 +76,10 @@ class HeroBanner extends Component {
     return (
       <div className={classes.heroBanner} id="home">
         <div className={classes.heroBannerImage} style={{ backgroundImage: `url(${Background})` }}>
-          <video src={Video} autoPlay="autoplay" loop="loop" muted="muted" className={classes.heroBannerVideo}></video>
+          <video width="100%" height="100vh" autoPlay="autoplay" loop="loop" muted="muted" className={classes.heroBannerVideo}>
+            <source src={WEBM_VIDEO} type="video/webm" />
+            <source src={MP4_VIDEO} type="video/mp4" />
+          </video>
           <div className={classes.heroBannerOverlay}>
             <SVGOverlay />
           </div>

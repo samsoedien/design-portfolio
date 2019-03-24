@@ -2,7 +2,12 @@ import React, { Component, lazy, Suspense } from 'react';
 // import PropTypes from 'prop-types';
 // import { Link } from 'react-router-dom';
 import { Collapse } from 'react-collapse';
-import { Grid, Typography } from '@material-ui/core';
+import {
+  Grid,
+  Typography,
+  Button,
+  Tooltip,
+} from '@material-ui/core';
 import { Fade } from 'react-reveal';
 
 import Loader from '../common/Loader';
@@ -14,34 +19,34 @@ import Project1 from '../../assets/img/tumbnails/project-pasthrees.jpg';
 import Project2 from '../../assets/img/tumbnails/project-actushape.png';
 import Project3 from '../../assets/img/tumbnails/project-vitality.jpg';
 import Project4 from '../../assets/img/tumbnails/project-mementory.jpg';
-import Project5 from '../../assets/img/tumbnails/project-sailance.png';
+// import Project5 from '../../assets/img/tumbnails/project-sailance.png';
 import Project6 from '../../assets/img/tumbnails/project-orbi.JPG';
 import Project7 from '../../assets/img/tumbnails/project-rollz.jpg';
 import Project8 from '../../assets/img/tumbnails/project-aqualux.jpg';
 import Project9 from '../../assets/img/tumbnails/project-sooth.jpg';
-import Project10 from '../../assets/img/tumbnails/project-robocleaner.jpg';
+// import Project10 from '../../assets/img/tumbnails/project-robocleaner.jpg';
 
 // import ProjectPasthrees from './project/ProjectPasthrees';
 // import ProjectActushape from './project/ProjectActushape';
 // import ProjectVitality from './project/ProjectVitality';
 // import ProjectMementory from './project/ProjectMementory';
-// import ProjectSailance from './project/ProjectSailance';
+// // import ProjectSailance from './project/ProjectSailance';
 // import ProjectOrbi from './project/ProjectOrbi';
 // import ProjectAssist from './project/ProjectAssist';
 // import ProjectAqualux from './project/ProjectAqualux';
 // import ProjectSooth from './project/ProjectSooth';
-// import ProjectRobocleaner from './project/ProjectRobocleaner';
+// // import ProjectRobocleaner from './project/ProjectRobocleaner';
 
 const ProjectPasthrees = lazy(() => import('./project/ProjectPasthrees'));
 const ProjectActushape = lazy(() => import('./project/ProjectActushape'));
 const ProjectVitality = lazy(() => import('./project/ProjectVitality'));
 const ProjectMementory = lazy(() => import('./project/ProjectMementory'));
-const ProjectSailance = lazy(() => import('./project/ProjectSailance'));
+// const ProjectSailance = lazy(() => import('./project/ProjectSailance'));
 const ProjectOrbi = lazy(() => import('./project/ProjectOrbi'));
 const ProjectAssist = lazy(() => import('./project/ProjectAssist'));
 const ProjectAqualux = lazy(() => import('./project/ProjectAqualux'));
 const ProjectSooth = lazy(() => import('./project/ProjectSooth'));
-const ProjectRobocleaner = lazy(() => import('./project/ProjectRobocleaner'));
+// const ProjectRobocleaner = lazy(() => import('./project/ProjectRobocleaner'));
 
 class Projects extends Component {
   constructor(props) {
@@ -138,12 +143,12 @@ class Projects extends Component {
       actushape,
       vitality,
       mementory,
-      sailance,
+      // sailance,
       orbi,
       assist,
       aqualux,
       sooth,
-      robocleaner,
+      // robocleaner,
     } = this.state;
     return (
       <section className="projects" id="projects">
@@ -155,8 +160,13 @@ class Projects extends Component {
               <article className="projects__article">
                 <Typography variant="h3">Design Projects</Typography>
                 <div className="horizontal-line" />
-                <Typography variant="body1">A small selection of design projects are displayed in an overview. Elaborate descriptions can be viewed by clicking on the desired project panel. Each project briefly reflect on personal learning goals.</Typography>
+                <Typography variant="body1" paragraph>A small selection of design projects are displayed in an overview. Click on the desired project panel to expand the project description underneath. Additionally will a paper portfolio be published soon.</Typography>
               </article>
+              <Grid container justify="center">
+                <Tooltip title="Coming Soon, Stay Tuned!" placement="top">
+                  <Button variant="outlined" color="primary">Download PDF Portfolio</Button>
+                </Tooltip>
+              </Grid>
             </Fade>
           </Grid>
         </Grid>
@@ -183,11 +193,11 @@ class Projects extends Component {
             <ProjectMementory id="mementory" projectImage={Project4} />
           </Collapse>
         </Suspense>
-        <Suspense fallback={<Loader />}>
+        {/* <Suspense fallback={<Loader />}>
           <Collapse isOpened={sailance}>
             <ProjectSailance id="sailance" projectImage={Project5} />
           </Collapse>
-        </Suspense>
+        </Suspense> */}
         <Suspense fallback={<Loader />}>
           <Collapse isOpened={orbi}>
             <ProjectOrbi id="orbi" projectImage={Project6} />
@@ -208,14 +218,14 @@ class Projects extends Component {
             <ProjectSooth id="sooth" projectImage={Project9} />
           </Collapse>
         </Suspense>
-        <Suspense fallback={<Loader />}>
+        {/* <Suspense fallback={<Loader />}>
           <Collapse isOpened={robocleaner}>
             <ProjectRobocleaner id="robocleaner" projectImage={Project10} />
           </Collapse>
-        </Suspense>
+        </Suspense> */}
       </section>
     );
-  };
+  }
 }
 
 export default Projects;

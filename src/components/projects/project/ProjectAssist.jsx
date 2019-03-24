@@ -11,7 +11,7 @@ import { Fade } from 'react-reveal';
 
 import ImageBanner from '../../layout/ImageBanner';
 
-import Video from '../../../assets/videos/Werkingsmodel_testrit.mp4';
+import Video from '../../../assets/videos/Werkingsmodel_testrit.webm';
 import Image2 from '../../../assets/img/project-rollz.jpg';
 import Image1 from '../../../assets/img/Brainstorm_Sketches_Opgewerkt.jpg';
 
@@ -53,7 +53,9 @@ const ProjectAssist = ({ classes }) => (
             </Grid>
 
           </Grid>
-          <video src={Video} className={classes.projectVideo} autoPlay="autoplay" loop="loop" muted="muted"></video>
+          <video className={classes.projectVideo} autoPlay="autoplay" loop="loop" muted="muted">
+            <source src={Video} type="video/webm" />
+          </video>        
         </Grid>
       </Grid>
       <Divider className="divider" />

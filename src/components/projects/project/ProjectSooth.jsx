@@ -12,7 +12,7 @@ import ImageBanner from '../../layout/ImageBanner';
 
 import Image1 from '../../../assets/img/project-sooth.jpg';
 // import Image2 from '../../../assets/img/project-sooth.jpg';
-import Video from '../../../assets/videos/TS_AnimationV1.2.mp4';
+import Video from '../../../assets/videos/TS_AnimationV1.2.webm';
 
 const styles = theme => ({
   projectImage: {
@@ -51,7 +51,9 @@ const ProjectSooth = ({ classes }) => (
             </Grid>
 
           </Grid>
-          <video src={Video} className={classes.projectVideo} autoPlay="autoplay" loop="loop" muted="muted"></video>
+          <video className={classes.projectVideo} autoPlay="autoplay" loop="loop" muted="muted">
+            <source src={Video} type="video/webm" />
+          </video>
         </Grid>
       </Grid>
     </Fade>

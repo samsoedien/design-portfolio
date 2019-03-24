@@ -52,7 +52,9 @@ const ProjectAqualux = ({ classes }) => (
             </Grid>
 
           </Grid>
-          <video src={Video} className={classes.projectVideo} autoPlay="autoplay" loop="loop" muted="muted"></video>
+          <video className={classes.projectVideo} autoPlay="autoplay" loop="loop" muted="muted">
+            <source src={Video} type="video/webm" />
+          </video>       
         </Grid>
       </Grid>
       <Divider className="divider" />

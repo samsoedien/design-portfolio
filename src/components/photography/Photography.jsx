@@ -7,7 +7,6 @@ import { Fade } from 'react-reveal';
 import GridList from './GridList';
 import ImageBanner from '../layout/ImageBanner';
 import AboutImage from '../../assets/img/DSC_1753.JPG';
-import Carousel from '../templates/Carousel';
 
 const styles = theme => ({
   root: {},
@@ -29,7 +28,6 @@ const Photography = ({ classes }) => (
       </Grid>
     </Grid>
     <GridList />
-    <Carousel />
   </section>
 );
 

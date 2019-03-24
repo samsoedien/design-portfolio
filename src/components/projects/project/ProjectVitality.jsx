@@ -12,7 +12,7 @@ import { Fade } from 'react-reveal';
 import ImageBanner from '../../layout/ImageBanner';
 import Image1 from '../../../assets/img/project-vitality.jpg';
 import Image2 from '../../../assets/img/DSC_1843.jpg';
-import Video from '../../../assets/videos/Vitality_Concept_Video.mp4';
+import Video from '../../../assets/videos/Vitality_Concept_Video.webm';
 
 const styles = theme => ({
   projectImage: {
@@ -51,7 +51,9 @@ const Vitality = ({ classes }) => (
             </Grid>
 
           </Grid>
-          <video src={Video} className={classes.projectVideo} autoPlay="autoplay" loop="loop" muted="muted"></video>
+          <video className={classes.projectVideo} autoPlay="autoplay" loop="loop" muted="muted">
+            <source src={Video} type="video/webm" />
+          </video>
         </Grid>
       </Grid>
       <Divider className="divider" />

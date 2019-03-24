@@ -11,7 +11,7 @@ import {
 import { Fade } from 'react-reveal';
 
 import ImageBanner from '../../layout/ImageBanner';
-import Video from '../../../assets/videos/Exploration_Affordances_Control_interface_V1.1.mp4';
+import Video from '../../../assets/videos/Exploration_Affordances_Control_interface_V1.1.webm';
 import Image1 from '../../../assets/img/project-actushape/IMG_0884.JPG';
 import Image2 from '../../../assets/img/project-actushape/IMG_1354.JPG';
 import Image3 from '../../../assets/img/project-actushape/IMG_1528.JPG';
@@ -59,7 +59,9 @@ const ProjectActushape = ({ classes }) => (
             </Grid>
 
           </Grid>
-          <video src={Video} className={classes.projectVideo} autoPlay="autoplay" loop="loop" muted="muted"></video>
+          <video className={classes.projectVideo} autoPlay="autoplay" loop="loop" muted="muted">
+            <source src={Video} type="video/webm" />
+          </video>
         </Grid>
       </Grid>
       <Divider className="divider" />

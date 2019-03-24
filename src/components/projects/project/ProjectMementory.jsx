@@ -12,7 +12,7 @@ import { Fade } from 'react-reveal';
 import ImageBanner from '../../layout/ImageBanner';
 import Image1 from '../../../assets/img/project-mementory.jpg';
 import Image2 from '../../../assets/img/DSC_2824.jpg';
-import Video from '../../../assets/videos/MEMY_Concept_Video_V2.0.mp4';
+import Video from '../../../assets/videos/MEMY_Concept_Video_V2.0.webm';
 
 const styles = theme => ({
   projectImage: {
@@ -51,7 +51,9 @@ const ProjectMementory = ({ classes }) => (
             </Grid>
 
           </Grid>
-          <video src={Video} className={classes.projectVideo} autoPlay="autoplay" loop="loop" muted="muted"></video>
+          <video className={classes.projectVideo} autoPlay="autoplay" loop="loop" muted="muted">
+            <source src={Video} type="video/webm" />
+          </video>
         </Grid>
       </Grid>
       <Divider className="divider" />
