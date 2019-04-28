@@ -27,7 +27,7 @@ const Navbar = ({ classes }) => {
       <nav className="header-nav hero-banner__image--bg-elem hero-banner__image--clip" id="myNav">
         <div className="header-nav--container">
           <ul className="header-nav-list">
-            <Scrollspy items={['home', 'about', 'projects', 'photography', 'contact']} currentClassName="is-current">
+            <Scrollspy items={['home', 'about', 'projects', 'contact']} currentClassName="is-current">
               <li className="header-nav-list-item"><AnchorLink offset="42" className="header-nav-link" href="#home">Home</AnchorLink></li>
               <li className="header-nav-list-item"><AnchorLink offset="42" className="header-nav-link" href="#about">About Me</AnchorLink></li>
               <li className="header-nav-list-item"><AnchorLink offset="42" className="header-nav-link" href="#projects">Projects</AnchorLink></li>

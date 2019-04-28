@@ -1,12 +1,11 @@
 import React, { Fragment } from 'react';
 import { Route, Switch } from 'react-router-dom';
 
-// import FormConfirmation from './components/contact/FormConfirmation';
-import ContactContainer from './containers/ContactContainer'
+import Portfolio from './assets/pdf/Design_Portfolio_Samsoedien_V5.0.pdf';
 
 const Routes = () => (
   <Fragment>
-    <Route exact path="/" component={ContactContainer} />
+    <Route exact path="/design-portfolio" component={Portfolio} />
   </Fragment>
 );
 

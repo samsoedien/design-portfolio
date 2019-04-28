@@ -29,7 +29,7 @@ const App = () => (
               {/* <Photography /> */}
               <ContactContainer />
             </main>
-            <Footer /> 
+            <Footer />
           </div>
         </ScrollToTop>
       </Router>

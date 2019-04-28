@@ -21,7 +21,7 @@ const styles = theme => ({
 });
 
 const Header = ({ classes }) => (
-  <header className={classes.mainHeader}>
+  <header className={classes.mainHeader} id="home">
     <Navbar />
     <HeroBanner />
   </header>

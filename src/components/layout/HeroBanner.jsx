@@ -74,7 +74,7 @@ class HeroBanner extends Component {
   render() {
     const { classes } = this.props;
     return (
-      <div className={classes.heroBanner} id="home">
+      <div className={classes.heroBanner}>
         <div className={classes.heroBannerImage} style={{ backgroundImage: `url(${Background})` }}>
           <video width="100%" height="100vh" autoPlay="autoplay" loop="loop" muted="muted" className={classes.heroBannerVideo}>
             <source src={WEBM_VIDEO} type="video/webm" />

@@ -15,6 +15,8 @@ import ProjectList from './ProjectList';
 import BannerImage from '../../assets/img/project-navi.JPG';
 import ImageBanner from '../layout/ImageBanner';
 
+import Portfolio from '../../assets/pdf/Design_Portfolio_Samsoedien_V5.0.pdf';
+
 import Project1 from '../../assets/img/tumbnails/project-pasthrees.jpg';
 import Project2 from '../../assets/img/tumbnails/project-actushape.png';
 import Project3 from '../../assets/img/tumbnails/project-vitality.jpg';
@@ -160,11 +162,11 @@ class Projects extends Component {
               <article className="projects__article">
                 <Typography variant="h3">Design Projects</Typography>
                 <div className="horizontal-line" />
-                <Typography variant="body1" paragraph>A small selection of design projects are displayed in an overview. Click on the desired project panel to expand the project description underneath. Additionally will a paper portfolio be published soon.</Typography>
+                <Typography variant="body1" paragraph>A small selection of design projects are displayed in an overview. Click on the desired project panel to expand the project description underneath. Additionally can a PDF version of the portfolio be downloaded using the following link.</Typography>
               </article>
               <Grid container justify="center">
-                <Tooltip title="Coming Soon, Stay Tuned!" placement="top">
-                  <Button variant="outlined" color="primary">Download PDF Portfolio</Button>
+                <Tooltip title="File size 52.5MB" placement="top">
+                  <Button href={Portfolio} variant="outlined" color="primary">Download PDF Portfolio</Button>
                 </Tooltip>
               </Grid>
             </Fade>
